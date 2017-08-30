@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.est.mrluke.appsimples.Activity.Cadastro">
+
+    <LinearLayout
+        android:id="@+id/linear1Cadastro"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Novo Usuário"
+            android:textStyle="bold"
+            android:textSize="22sp"/>
+
+        <EditText
+            android:id="@+id/edtNomeCadastro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:inputType="text"
+            android:hint="Nome"/>
+
+        <EditText
+            android:id="@+id/edtEmailCadastro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:inputType="textEmailAddress"
+            android:hint="E-mail"/>
+
+        <EditText
+            android:id="@+id/edtSenhaCadastro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:inputType="textPassword"
+            android:hint="Senha"/>
+
+        <EditText
+            android:id="@+id/edtConfirmarSenhaCadastro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:inputType="textPassword"
+            android:hint="Confirmar Senha"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="right">
+
+            <Button
+                android:id="@+id/btnSalvarCadastro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:text="salvar"/>
+
+            <Button
+                android:id="@+id/btnLimparCadastro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:text="limpar"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear2Cadastro"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:gravity="center"
+        android:background="#6b000000">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Possui cadastro?"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:textSize="18sp"
+            android:textColor="#ffffff"/>
+
+        <TextView
+            android:id="@+id/txtLogarCadastro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="Efetue Login."
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="#ffbc2c"/>
+
+    </LinearLayout>
+</RelativeLayout>

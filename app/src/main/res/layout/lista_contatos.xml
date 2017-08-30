@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/txtUIidlContatoLista"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            />
+
+        <TextView
+            android:id="@+id/txtNomeContatoLista"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:textSize="20sp"
+            android:text="Nome"
+            android:textStyle="italic"/>
+
+        <TextView
+            android:id="@+id/txtEmailContatoLista"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:textSize="18sp"
+            android:text="E-mail"
+            android:textStyle="bold"
+            android:textColor="#ffbc2c"/>
+    </LinearLayout>
+</RelativeLayout>
